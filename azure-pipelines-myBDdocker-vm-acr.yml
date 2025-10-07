@@ -7,8 +7,8 @@ variables:
   VM_IP_PUBLICA: "20.57.75.7"
   
   # --- Variables Originales Corregidas (en minúsculas) ---
-  IMAGE_NAME: "mybd"
-  ACR_NAME: "mybd"
+  IMAGE_NAME: "rgcontainernew"
+  ACR_NAME: "rgcontainernew"
   ACR_USERNAME: "rgcontainernew"
   
   # Tu contraseña original del ACR
@@ -80,4 +80,5 @@ stages:
               # Mostrar la URL para conectarse a MySQL
               echo "Conectar a MySQL en la máquina virtual con la IP: $(VM_IP_PUBLICA), puerto: 3306"
             displayName: "Mostrar detalles de conexión a MySQL"
+
 
