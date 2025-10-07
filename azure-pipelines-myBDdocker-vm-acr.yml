@@ -16,7 +16,7 @@ stages:
       - deployment: DeployToVM
         displayName: "Deploy MySQL to VM"
         environment:
-          name: "VMLinuxDocker" # Nombre del entorno configurado en Azure DevOps
+          name: "VMDL" # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine # Especifica que se conecta a una máquina virtual
         strategy:
           runOnce:
@@ -92,3 +92,4 @@ stages:
                     # Mostrar la URL para conectarse a MySQL
                     echo "Conectar a MySQL en la máquina virtual con la IP: ${VM_IP_PUBLICA}, puerto: 3306"
                   displayName: "Mostrar detalles de conexión a MySQL"
+
