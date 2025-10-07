@@ -6,7 +6,7 @@ trigger:
 variables:
   VM_IP_PUBLICA: "20.57.75.7" # Se debe colocar la IP pública de tu máquina virtual
   IMAGE_NAME: "rgcontainernew" # Se debe colocar el Nombre de la imagen que será descargada desde ACR
-  ACR_NAME: "rgcontainernew2" # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
+  ACR_NAME: "rgcontainernew" # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
   ACR_USERNAME: "rgcontainernew" # Se debe colocar el Nombre de usuario del ACR
   ACR_PASSWORD: "BTEHzRU4soLpTCxLBeJJJQIE1clcu822NrrotUVacm+ACRCnIU5Q" # Se debe colocar la Contraseña del ACR
 
@@ -92,6 +92,7 @@ stages:
                     # Mostrar la URL para conectarse a MySQL
                     echo "Conectar a MySQL en la máquina virtual con la IP: ${VM_IP_PUBLICA}, puerto: 3306"
                   displayName: "Mostrar detalles de conexión a MySQL"
+
 
 
 
